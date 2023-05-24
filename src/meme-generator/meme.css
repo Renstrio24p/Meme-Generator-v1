@@ -6,7 +6,6 @@ main {
 
 .meme-container {
     width: 100%;
-    height: 100%;
     background: #9c46a7;
     object-fit: cover;
     background: radial-gradient(circle, #9c46a7 0, #c94dd5 52%, #d5a0d6)
@@ -111,7 +110,7 @@ main img {
     will-change: filter;
     transition: filter .3s;
     filter: drop-shadow(0 0 1em #f5f2f5e3);
-    height: 80vh;
+    height: 500px;
     width: 50vw;
     padding: 10px;
     z-index: 1
@@ -159,7 +158,7 @@ main .image {
 
 @media only screen and (max-width:1920px) {
     .meme-container {
-        height: 140vh
+        height: 140vmax
     }
 }
 
@@ -175,7 +174,7 @@ main .image {
     }
 
     .meme-container {
-        height: 140vh
+        height: 140vmax
     }
 
     .overlay {
@@ -197,6 +196,7 @@ main .image {
 }
 
 @media only screen and (max-width:456px) {
+
     .left h1 {
         font-size: 15px;
         transition: .5s
@@ -229,5 +229,9 @@ main .image {
     .form-btn {
         display: flex;
         flex-direction: column
+    }
+
+    .meme-container {
+        height: 160vmax
     }
 }
